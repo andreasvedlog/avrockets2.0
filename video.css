@@ -1,5 +1,5 @@
 body {
-	background-color: white;
+	background-color: #FFFFFF;
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
@@ -19,13 +19,12 @@ main {
 	justify-content: center;
 	height: 100vh;
 }
-.video-container {
+.video-wrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	padding-bottom: 56.25%;
 	height: 0;
-	margin-bottom: 2rem;
 }
-.video-container iframe {
+.video-wrapper iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -53,17 +52,10 @@ main {
 	text-decoration: none;
 	font-size: 1.5rem;
 	transition: background-color 0.3s;
+	margin-top: 2rem;
 }
 .overlay a.button:hover {
 	background-color: #008B8B;
-}
-.button-container {
-	text-align: center;
-}
-.button-container a.button {
-	font-size: 1.5rem;
-	padding: 1rem 2rem;
-	margin-top: 2rem;
 }
 @media (max-width: 768px) {
 	header {
@@ -77,10 +69,6 @@ main {
 		margin-bottom: 0.5rem;
 	}
 	.overlay a.button {
-		font-size: 1.2rem;
-		padding: 0.8rem 1.5rem;
-	}
-	.button-container a.button {
 		font-size: 1.2rem;
 		padding: 0.8rem 1.5rem;
 	}
